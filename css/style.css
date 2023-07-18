@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'Bold';
+    src: url(../fonts/gilroy-bold.ttf);
+}
+@font-face {
+    font-family: 'Medium';
+    src: url(../fonts/gilroy-medium.ttf);
+}
+@font-face {
+    font-family: 'Regular';
+    src: url(../fonts/gilroy-regular.ttf);
+}
+@font-face {
+    font-family: 'Semibold';
+    src: url(../fonts/gilroy-semibold.ttf);
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -99,11 +118,11 @@ line-height: normal;
     margin-top: 17px;
     margin-left: 21px;
     color: #888;
-font-family: Gilroy-Medium;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .hero-blog-pic{
@@ -132,7 +151,7 @@ line-height: normal;
 }
 .from h3{
     color: #AAA;
-    font-family: Gilroy-Bold;
+    font-family: 'Bold',Gilroy;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -146,26 +165,24 @@ line-height: normal;
     height: 243px;
     margin: 0 auto;
 }
-.cards-item{
-    width: 1200px;
-    height: 50px;
-    margin-top: 97px;
-    margin-bottom: 96px;
-    margin-left:345px;
-    margin-right: 375px;
-}
-.c-navbar-list{
-    margin-right: 48px;
-}
-#inform{
-     background: #FAFAFA;
-    width: 1920px;
-    height: 520px;
-    align-items:center;
-    display: flex;
-    margin: 0 auto;
-
-
+    .cards-item{
+        width: 1200px;
+        height: 50px;
+        margin-top: 97px;
+        margin-bottom: 96px;
+        margin-left:345px;
+        margin-right: 375px;
+    }
+    .c-navbar-list{
+        margin-right: 48px;
+    }
+    #inform{
+        background: #FAFAFA;
+        width: 1920px;
+        height: 520px;
+        align-items:center;
+        display: flex;
+        margin: 0 auto;
     }
     .inform-item{
         display: flex;
@@ -182,7 +199,7 @@ line-height: normal;
     }
     .inform-item-info h2{
         color: #000;
-        font-family: Gilroy-Bold;
+        font-family:'Bold',Gilroy;
         font-size: 45px;
         font-style: normal;
         font-weight: 400;
@@ -191,7 +208,7 @@ line-height: normal;
     .inform-item-info p{
         margin-top: 20px;
         color: #666;
-        font-family: Gilroy-Regular;
+        font-family: 'Regular', Gilroy;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -222,7 +239,7 @@ line-height: normal;
     .features-item-card h3{
         margin-top: 25px;
         color: #000;
-        font-family: Gilroy-Bold;
+        font-family: 'Bold', Gilroy;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
@@ -391,12 +408,13 @@ line-height: normal;
         .wedo-cards{
             margin-top: 50px;
         }
-        .wdh2{
+    .wedotwo{
             width: 557px;
             height: 117px;
             margin-top:  107px;
-        }
-        .wdp{
+            }
+
+        .wedop{
             margin-top: 19px;
             width: 570px;
             height: 41px;
@@ -440,22 +458,15 @@ line-height: normal;
             margin-right: 85px;
         }
         .green{
-            border: 1 px solid green;
+            border: 1px solid green;
             width: 30px;
             height: 30px;
         }
         .yellow{
-            border: 1 px solid yellow;
+            border: 1px solid yellow;
             width: 30px;
             height: 30px;
-        }
-        .black{
-            border: 1 px solid yellow;
-            width: 30px;
-            height: 30px;
-        }
-
-
+        }   
         #mailbox{
             width: 1920px;
             height: 500px;
@@ -562,11 +573,11 @@ line-height: normal;
         }
         .plans-card h1{
             color: #000;
-font-family: Gilroy-Medium;
-font-size: 70px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 105px */
+            font-family: Gilroy-Medium;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; 
         }
         .plans-card p{
             color: #666;
@@ -597,7 +608,7 @@ line-height: 150%; /* 105px */
         font-weight: 400;
         line-height: 150%; /* 67.5px */
     }
-    .team-info p{
+    .team-info>p{
         color: #666;
         text-align: center;
         font-family: Gilroy-Medium;
@@ -623,7 +634,7 @@ line-height: 150%; /* 105px */
     .item-team img{
         margin-top: 50px;
     }
-    .item-team p{
+    .item-team>p{
         color: #888;
         font-family: Gilroy-Medium;
         font-size: 13px;
@@ -660,7 +671,7 @@ line-height: 150%; /* 105px */
         font-weight: 400;
         line-height: 150%; /* 30px */
     }
-    .team-cards p{
+    .team-cards>p{
         color: #888;
         font-family: Gilroy-Medium;
         font-size: 13px;
@@ -702,7 +713,7 @@ line-height: 150%; /* 105px */
         font-weight: 400;
         line-height: normal;
     }
-      .testimonial-info p{ 
+      .testimonial-info>p{ 
         color: #666;
         text-align: center;
         font-family: Gilroy-Regular;
@@ -716,14 +727,14 @@ line-height: 150%; /* 105px */
         margin: 0 auto;
 }
     .testimonial-cards{
-        width: 590x;
+        width: 590px;
         margin-top: 55px;
         margin-right: 30px;
         text-align: center;
         height: 271px;
         margin-bottom: 30px;
     }
-    .testimonial-cards p{
+    .testimonial-cards>p{
         margin-top: 25px;
         color: #888;
         text-align: center;
