@@ -10,18 +10,19 @@
 .last{
     order: 12;
 }
-/*
+.between{
+    justify-content: space-between;
+}
+
 .center{
     text-align: center;
     justify-content: center;
     
-}
+}/*
 .end{
     justify-content: end;
 }
-.between{
-    justify-content: space-between;
-}
+
 .around{
     justify-content: space-around;
 }
@@ -111,3 +112,7 @@
 .col-12{
     flex-basis: 100%;
 }  
+.row{
+    display: flex;
+    flex-wrap: wrap row;
+}
